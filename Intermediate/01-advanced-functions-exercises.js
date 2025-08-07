@@ -122,5 +122,4 @@ let animal = {
         console.log(this.size);
     }
 }
-
 animal.getSize();

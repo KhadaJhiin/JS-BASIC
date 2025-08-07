@@ -77,7 +77,7 @@ person.correrWrongWay();
 })();
 
 // -------------------------------------------REST PARAMETERS (...)
-// With type of parameter can created an array of parameters in case we don't know
+// With this type of parameter can created an array of parameters in case we don't know
 // how many parameter we will need.
 
 function sum(...numbers) {
