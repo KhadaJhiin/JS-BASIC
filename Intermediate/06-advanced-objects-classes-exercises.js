@@ -106,6 +106,39 @@ employed.getDayOff();
 
 // 9. Create a singleton
 
-
+class MainCharacter {
+    constructor(name){
+        if(MainCharacter.instance){
+            return MainCharacter.instance;
+        }
+        this.name = name;
+        MainCharacter.instance = this;
+    };
+};
 
 // 10. Develop a proxy
+
+const autenticationProxy = {
+    set(target, property, value){
+        if((property === "passWord" && value === " ") || (property ==="userName" && value === " ")){
+            throw new Error("There can be no blank spaces");
+        };
+        target[property] = value;
+    }
+};
+
+class Acount {
+    constructor(userName, passWord){
+        this.userName = userName;
+        this.passWord = passWord;
+    };
+};
+
+let FirstUser = new Proxy(new Acount("Jose","1234"),autenticationProxy);
+FirstUser.userName = " ";
+console.log(FirstUser.userName);
+console.log(FirstUser.passWord);
+
+
+
+
