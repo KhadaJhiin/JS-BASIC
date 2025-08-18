@@ -18,3 +18,5 @@ Thumbs.db
 # Builds de producción
 dist/
 build/
+
+things/
