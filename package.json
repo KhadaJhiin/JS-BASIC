@@ -1,0 +1,23 @@
+{
+  "name": "1-java-script",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhadaJhiin/JS-BASIC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KhadaJhiin/JS-BASIC/issues"
+  },
+  "homepage": "https://github.com/KhadaJhiin/JS-BASIC#readme",
+  "description": "",
+  "devDependencies": {
+    "jest": "^30.0.5"
+  }
+}
